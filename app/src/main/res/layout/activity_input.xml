@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cameron.weighliftingtracker.Input">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txt_weightkg"
+        android:hint="Lift Weight (Kg)"
+        android:layout_alignBaseline="@+id/txt_weightlb"
+        android:layout_alignBottom="@+id/txt_weightlb"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn_savenew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_remove"
+        android:layout_below="@+id/txt_location"
+        android:layout_marginTop="35dp"
+        android:onClick="addButtonClicked"
+        android:text="Save New lift"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_savenew"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:onClick="removeButtonClicked"
+        android:text="remove lift"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_displaytest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="54dp"
+        android:text="Add New Lift"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Lift"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txt_weightlb"
+        android:hint="Lift Weight (lb)"
+        android:visibility="invisible"
+        android:layout_below="@+id/txt_newlift"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sw_kgorlb"
+        android:text="Kg"
+        android:checked="true"
+        android:switchTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_above="@+id/txt_location"
+        android:layout_alignParentEnd="true" />
+
+    <Switch
+        android:id="@+id/sw_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:switchTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="location"
+        android:layout_alignBottom="@+id/txt_location"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/txt_newlift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter new lift"
+        android:inputType="text"
+        android:visibility="visible"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp" />
+
+    <EditText
+        android:id="@+id/txt_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Location name"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/txt_weightkg"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

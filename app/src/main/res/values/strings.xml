@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Weighlifting Tracker</string>
+    <string-array name="Lifts">
+        <item>Deadlift</item>
+        <item>Clean</item>
+        <item>Jerk</item>
+        <item>Snatch</item>
+    </string-array>
+    <string name="title_activity_lifts_location">Map</string>
+</resources>
